@@ -1,0 +1,27 @@
+{
+    "name": "outeredge/magento-sirv-optimisations",
+    "description": "Sirv Optimisations & Tweaks by outer/edge",
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "support@outeredge.agency",
+            "homepage": "https://outeredge.agency/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "sirv/magento2": "^5|^6"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "OuterEdge\\SirvOptimisations\\": ""
+        }
+    }
+}

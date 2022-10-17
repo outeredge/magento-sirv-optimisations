@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Sirv\Magento2\Model\View\Asset\Image" type="OuterEdge\SirvOptimisations\Model\View\Asset\Image" />
+    <virtualType name="OuterEdge\SirvOptimisations\Model\View\Asset\ImageFactory" type="Sirv\Magento2\Model\View\Asset\ImageFactory">
+        <arguments>
+            <argument name="instanceName" xsi:type="string">OuterEdge\SirvOptimisations\Model\View\Asset\Image</argument>
+        </arguments>
+    </virtualType>
+</config>
