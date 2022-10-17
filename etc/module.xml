@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="OuterEdge_SirvOptimisations" setup_version="1.0.0">
         <sequence>
-            <module name="OuterEdge_SirvOptimisations"/>
+            <module name="Sirv_Magento2"/>
         </sequence>
     </module>
 </config>
