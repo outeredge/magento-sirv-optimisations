@@ -1,7 +1,2 @@
-<?php
-$parsedUrl = parse_url($this->getMediaUrl());
-$url = $parsedUrl['scheme'] . '://' . $parsedUrl['host']
-?>
-
-<link rel="preconnect" href="<?= $url ?>" crossorigin>
-<link rel="dns-prefetch" href="<?= $url ?>">
+<link rel="preconnect" href="<?= $this->getMediaUrl() ?>" crossorigin>
+<link rel="dns-prefetch" href="<?= $this->getMediaUrl() ?>">
