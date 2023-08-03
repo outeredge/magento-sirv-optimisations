@@ -10,11 +10,7 @@ class MediaUrl extends Template
 {
     public function getMediaUrl()
     {
-        $url = $this ->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);;
-        if($url) {
-            return $url;
-        }
-        return null;
+        return $this ->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
     }
 }
 ?>

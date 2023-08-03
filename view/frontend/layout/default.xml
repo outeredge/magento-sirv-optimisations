@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="head.additional">
-            <block class="OuterEdge\SirvOptimisations\Block\MediaUrl" name="outeredge.sirv.preconnect" template="OuterEdge_SirvOptimisations::preconnect.phtml"/>
+            <block class="OuterEdge\SirvOptimisations\Block\MediaUrl" name="outeredge.sirv.preconnect" template="OuterEdge_SirvOptimisations::media-preconnect.phtml"/>
         </referenceBlock>
      </body>
 </page>
