@@ -24,10 +24,11 @@ class Image extends SirvImage
             $mediaConfig,
             $context,
             $encryptor,
-            $scopeConfig,
             $filePath,
             $miscParams
         );
+
+        $this->scopeConfig = $scopeConfig;
     }
 
     /*
@@ -41,7 +42,7 @@ class Image extends SirvImage
         );
 
         $query = parent::getUrlQuery($absPath);
-        
+
         if (!$enableCropTrim) {
             return $query;
         }
