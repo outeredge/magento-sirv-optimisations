@@ -1,0 +1,11 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <oe_sirv>
+            <settings>
+                <enable_crop_trim>1</enable_crop_trim>
+                <enable_media_preconnect>1</enable_media_preconnect>
+                <enable_sirv_js>1</enable_sirv_js>
+            </settings>
+        </oe_sirv>
+    </default>
+</config>
