@@ -40,11 +40,11 @@ class Image extends SirvImage
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
         );
 
-        if (!$enableCropTrim) {
-            parent::getUrlQuery($absPath);
-        }
-
         $query = parent::getUrlQuery($absPath);
+        
+        if (!$enableCropTrim) {
+            return $query;
+        }
 
         if (empty($query) || (
             !stristr($absPath, '/catalog/product/') &&
@@ -54,6 +54,5 @@ class Image extends SirvImage
         }
 
         return $query . '&crop.type=trim';
-
     }
 }
