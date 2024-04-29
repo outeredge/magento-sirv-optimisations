@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "sirv/magento2": "^5|^6"
+        "sirv/magento2": "^5|^6|^7"
     },
     "autoload": {
         "files": [
