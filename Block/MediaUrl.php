@@ -13,7 +13,7 @@ class MediaUrl extends Template
         
         if ($mediaUrl) {
             $parsedUrl = parse_url($mediaUrl);
-            $mediaUrl  = $parsedUrl['scheme'] . '://' . $parsedUrl['host'];
+            $mediaUrl  = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] . '://' . $parsedUrl['host'] : $mediaUrl;
         }
         
         return $mediaUrl;
